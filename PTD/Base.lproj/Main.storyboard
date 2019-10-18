@@ -861,6 +861,9 @@
                             <constraint firstAttribute="trailing" secondItem="U4H-Zm-isc" secondAttribute="trailing" id="zni-Mw-dKv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="U4H-Zm-isc" id="Jmb-Dm-e8h"/>
+                    </connections>
                 </viewController>
                 <customObject id="Byx-lY-sLq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

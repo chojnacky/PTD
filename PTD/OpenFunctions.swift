@@ -11,11 +11,11 @@ import Darwin
 
 class Functions {
   
-  let f: Double = 17
-  let fs: Double = 1000
-  let d: Double = Double((3*Double.pi)/1)
-  let T: Double = 1.2
-  let e: Double = Double(Darwin.M_E)
+  var f: Double = 17
+  var fs: Double = 1000
+  var d: Double = Double((3*Double.pi)/1)
+  var T: Double = 1.2
+  var e: Double = Double(Darwin.M_E)
   var m: Double = 0
   var interval: Double = 1/1000
   
@@ -28,7 +28,13 @@ class Functions {
       ys.append(self.x(t: i))
     }
     self.m = ys.max()!
-    print("OpenFunctions initialized.")
+    print("OpenFunctions initialized with settings: \nf = \(f) Hz\nd = \(d)\nfs = \(fs) Hz\nT = \(T) s")
+  }
+  
+  init(T: Double, fs: Double){
+    self.fs = fs
+    self.T = T
+    print("OpenFunctions initialized with settings: \nf = \(f) Hz\nd = \(d)\nfs = \(fs) Hz\nT = \(T) s")
   }
   
   func x(t: Double) -> Double {

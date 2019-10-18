@@ -15,8 +15,7 @@ class LineChartViewController2: NSViewController
 {
 
   @IBOutlet weak var lineChartView: LineChartView!
-  
-    let fc = Functions()
+  let fc = Functions()
     
     override open func viewDidLoad()
     {

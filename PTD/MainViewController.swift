@@ -11,6 +11,8 @@ import Cocoa
 
 class MainViewController : NSViewController {
   
+  @IBOutlet weak var ownership: NSTextField!
+  
   @IBAction func PTD1(_ sender: NSButton) {
     performSegue(withIdentifier: "PTD1", sender: self)
   }
@@ -19,6 +21,7 @@ class MainViewController : NSViewController {
   }
   override func viewDidLoad() {
     super.viewDidLoad()
+    ownership.stringValue = "Created by Karol Chojnacki"
   }
   
 }

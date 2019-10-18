@@ -706,11 +706,11 @@
             <objects>
                 <viewController title="Podstawy Transmisji Danych" showSeguePresentationStyle="single" id="QNv-QW-l6e" customClass="MainViewController" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="EF5-Fp-vCs">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="194" height="204"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaD-6l-vep">
-                                <rect key="frame" x="44" y="222" width="106" height="32"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eaD-6l-vep">
+                                <rect key="frame" x="44" y="126" width="106" height="32"/>
                                 <buttonCell key="cell" type="push" title="PTD #1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2bC-AH-K1I">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="15"/>
@@ -720,7 +720,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-oW-9sZ">
-                                <rect key="frame" x="44" y="191" width="106" height="32"/>
+                                <rect key="frame" x="44" y="95" width="106" height="32"/>
                                 <buttonCell key="cell" type="push" title="PTD #2 A" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rPF-eo-Fjj">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="15"/>
@@ -729,22 +729,36 @@
                                     <action selector="PTD2A:" target="QNv-QW-l6e" id="RTS-96-547"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dLN-wD-a6B">
+                                <rect key="frame" x="8" y="10" width="178" height="15"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="center" title="Label" id="hwv-lh-Wif">
+                                    <font key="font" metaFont="systemLight" size="12"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o4s-oW-9sZ" secondAttribute="trailing" constant="50" id="1fJ-hk-hw9"/>
+                            <constraint firstItem="dLN-wD-a6B" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="10" id="9aJ-Pr-GJ6"/>
                             <constraint firstItem="o4s-oW-9sZ" firstAttribute="top" secondItem="eaD-6l-vep" secondAttribute="bottom" constant="10" id="MHj-co-Mto"/>
                             <constraint firstItem="eaD-6l-vep" firstAttribute="top" secondItem="EF5-Fp-vCs" secondAttribute="top" constant="50" id="Wed-WA-q9G"/>
+                            <constraint firstAttribute="trailing" secondItem="eaD-6l-vep" secondAttribute="trailing" constant="50" id="d6m-gj-C10"/>
                             <constraint firstItem="o4s-oW-9sZ" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="50" id="ezm-74-8w7"/>
+                            <constraint firstAttribute="trailing" secondItem="dLN-wD-a6B" secondAttribute="trailing" constant="10" id="h6Y-SB-aHZ"/>
+                            <constraint firstAttribute="bottom" secondItem="dLN-wD-a6B" secondAttribute="bottom" constant="10" id="l1B-52-0EB"/>
                             <constraint firstItem="eaD-6l-vep" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="50" id="w9t-He-YDS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ownership" destination="dLN-wD-a6B" id="a5A-jl-sP0"/>
                         <segue destination="XfG-lQ-9wD" kind="show" identifier="PTD1" id="P6h-7q-fT2"/>
                         <segue destination="Agq-j3-HuC" kind="show" identifier="PTD2A" id="yOs-An-XxM"/>
                     </connections>
                 </viewController>
                 <customObject id="UYz-JF-AET" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="235"/>
+            <point key="canvasLocation" x="504.5" y="187"/>
         </scene>
         <!--PTD #2 A-->
         <scene sceneID="ElB-gB-Aud">

@@ -774,10 +774,10 @@
             </objects>
             <point key="canvasLocation" x="504.5" y="187"/>
         </scene>
-        <!--Line Chart View Controller3-->
+        <!--PTD #2 B-->
         <scene sceneID="uip-qG-68h">
             <objects>
-                <viewController showSeguePresentationStyle="single" id="tRn-Y4-gCd" customClass="LineChartViewController3" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PTD #2 B" showSeguePresentationStyle="single" id="tRn-Y4-gCd" customClass="LineChartViewController3" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Jk4-4Y-0FG">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -793,6 +793,9 @@
                             <constraint firstItem="xvo-oS-kvb" firstAttribute="leading" secondItem="Jk4-4Y-0FG" secondAttribute="leading" id="wd9-nF-b3J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="xvo-oS-kvb" id="6Ap-K1-Gsi"/>
+                    </connections>
                 </viewController>
                 <customObject id="xMr-7a-tq3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

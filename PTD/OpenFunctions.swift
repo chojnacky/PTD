@@ -28,6 +28,7 @@ class Functions {
       ys.append(self.x(t: i))
     }
     self.m = ys.max()!
+    print("OpenFunctions initialized.")
   }
   
   func x(t: Double) -> Double {
@@ -44,9 +45,15 @@ class Functions {
   }
 
   func z(t: Double) -> Double {
-    let first: Double = y(t: t) + pow(e, x(t: t) + y(t: t))
-    let second: Double = pow(abs(y(t: t)), 0.333)
-    return first * second
+    let power: Double = x(t: t) + y(t: t)
+    let second: Double = pow(e, power)
+
+    let third: Double = abs(y(t: t))
+    let fourth: Double = pow(third, 0.333)
+
+    let comb: Double = y(t: t) + second
+
+    return comb * fourth
   }
   
   func v(t: Double) -> Double {

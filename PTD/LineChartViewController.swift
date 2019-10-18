@@ -37,6 +37,7 @@ class LineChartViewController: NSViewController
       self.lineChartView.backgroundColor = NSUIColor.white
       self.lineChartView.gridBackgroundColor = NSUIColor.white
       self.lineChartView.chartDescription?.text = "Zadanie #1"
+      
     }
     
     override open func viewWillAppear()

@@ -1,10 +1,11 @@
 //
-//  ViewController.swift
+//  LineChartViewController3.swift
 //  PTD
 //
 //  Created by Karol Chojnacki on 18/10/2019.
 //  Copyright © 2019 Karol Chojnacki. All rights reserved.
 //
+
 
 import Foundation
 import Darwin
@@ -37,7 +38,7 @@ class LineChartViewController3: NSViewController
       self.lineChartView.data = data
       self.lineChartView.backgroundColor = NSUIColor.white
       self.lineChartView.gridBackgroundColor = NSUIColor.white
-      self.lineChartView.chartDescription?.text = "Zadanie #1"
+      self.lineChartView.chartDescription?.text = "Zadanie #2 B"
       
     }
     

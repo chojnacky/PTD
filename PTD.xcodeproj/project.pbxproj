@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0BD6789235A3E190016F836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD6788235A3E190016F836 /* AppDelegate.swift */; };
+		E0BD678B235A3E190016F836 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD678A235A3E190016F836 /* LineChartViewController.swift */; };
+		E0BD678E235A3E190016F836 /* PTD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0BD678C235A3E190016F836 /* PTD.xcdatamodeld */; };
+		E0BD6790235A3E1A0016F836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BD678F235A3E1A0016F836 /* Assets.xcassets */; };
+		E0BD6793235A3E1A0016F836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BD6791235A3E1A0016F836 /* Main.storyboard */; };
+		E0BD679C235A3E590016F836 /* Charts-3.4.0 in Resources */ = {isa = PBXBuildFile; fileRef = E0BD679B235A3E590016F836 /* Charts-3.4.0 */; };
+		E0BD67A0235A3E840016F836 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E0BD679F235A3E840016F836 /* Charts */; };
+		E0BD67A2235A41350016F836 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A1235A41350016F836 /* MainViewController.swift */; };
+		E0BD67A4235A44340016F836 /* LineChartViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A3235A44340016F836 /* LineChartViewController2.swift */; };
+		E0BD67A6235A445F0016F836 /* OpenFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A5235A445F0016F836 /* OpenFunctions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0BD6785235A3E180016F836 /* PTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0BD6788235A3E190016F836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0BD678A235A3E190016F836 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		E0BD678D235A3E190016F836 /* PTD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTD.xcdatamodel; sourceTree = "<group>"; };
+		E0BD678F235A3E1A0016F836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0BD6792235A3E1A0016F836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0BD6794235A3E1A0016F836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BD6795235A3E1A0016F836 /* PTD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PTD.entitlements; sourceTree = "<group>"; };
+		E0BD679B235A3E590016F836 /* Charts-3.4.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Charts-3.4.0"; sourceTree = "<group>"; };
+		E0BD67A1235A41350016F836 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E0BD67A3235A44340016F836 /* LineChartViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController2.swift; sourceTree = "<group>"; };
+		E0BD67A5235A445F0016F836 /* OpenFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFunctions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0BD6782235A3E180016F836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BD67A0235A3E840016F836 /* Charts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0BD677C235A3E180016F836 = {
+			isa = PBXGroup;
+			children = (
+				E0BD679B235A3E590016F836 /* Charts-3.4.0 */,
+				E0BD6787235A3E180016F836 /* PTD */,
+				E0BD6786235A3E180016F836 /* Products */,
+				E0BD679E235A3E840016F836 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0BD6786235A3E180016F836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0BD6785235A3E180016F836 /* PTD.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0BD6787235A3E180016F836 /* PTD */ = {
+			isa = PBXGroup;
+			children = (
+				E0BD6788235A3E190016F836 /* AppDelegate.swift */,
+				E0BD67A5235A445F0016F836 /* OpenFunctions.swift */,
+				E0BD678A235A3E190016F836 /* LineChartViewController.swift */,
+				E0BD67A3235A44340016F836 /* LineChartViewController2.swift */,
+				E0BD67A1235A41350016F836 /* MainViewController.swift */,
+				E0BD678F235A3E1A0016F836 /* Assets.xcassets */,
+				E0BD6791235A3E1A0016F836 /* Main.storyboard */,
+				E0BD6794235A3E1A0016F836 /* Info.plist */,
+				E0BD6795235A3E1A0016F836 /* PTD.entitlements */,
+				E0BD678C235A3E190016F836 /* PTD.xcdatamodeld */,
+			);
+			path = PTD;
+			sourceTree = "<group>";
+		};
+		E0BD679E235A3E840016F836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0BD6784235A3E180016F836 /* PTD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BD6798235A3E1A0016F836 /* Build configuration list for PBXNativeTarget "PTD" */;
+			buildPhases = (
+				E0BD6781235A3E180016F836 /* Sources */,
+				E0BD6782235A3E180016F836 /* Frameworks */,
+				E0BD6783235A3E180016F836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTD;
+			packageProductDependencies = (
+				E0BD679F235A3E840016F836 /* Charts */,
+			);
+			productName = PTD;
+			productReference = E0BD6785235A3E180016F836 /* PTD.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0BD677D235A3E180016F836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Karol Chojnacki";
+				TargetAttributes = {
+					E0BD6784235A3E180016F836 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = E0BD6780235A3E180016F836 /* Build configuration list for PBXProject "PTD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0BD677C235A3E180016F836;
+			productRefGroup = E0BD6786235A3E180016F836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0BD6784235A3E180016F836 /* PTD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0BD6783235A3E180016F836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BD6790235A3E1A0016F836 /* Assets.xcassets in Resources */,
+				E0BD679C235A3E590016F836 /* Charts-3.4.0 in Resources */,
+				E0BD6793235A3E1A0016F836 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0BD6781235A3E180016F836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BD678B235A3E190016F836 /* LineChartViewController.swift in Sources */,
+				E0BD67A2235A41350016F836 /* MainViewController.swift in Sources */,
+				E0BD678E235A3E190016F836 /* PTD.xcdatamodeld in Sources */,
+				E0BD67A6235A445F0016F836 /* OpenFunctions.swift in Sources */,
+				E0BD67A4235A44340016F836 /* LineChartViewController2.swift in Sources */,
+				E0BD6789235A3E190016F836 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0BD6791235A3E1A0016F836 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0BD6792235A3E1A0016F836 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0BD6796235A3E1A0016F836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0BD6797235A3E1A0016F836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E0BD6799235A3E1A0016F836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PTD/PTD.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MGJU6ZAT58;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PTD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = KChojnacki.PTD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E0BD679A235A3E1A0016F836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PTD/PTD.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MGJU6ZAT58;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PTD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = KChojnacki.PTD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0BD6780235A3E180016F836 /* Build configuration list for PBXProject "PTD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BD6796235A3E1A0016F836 /* Debug */,
+				E0BD6797235A3E1A0016F836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0BD6798235A3E1A0016F836 /* Build configuration list for PBXNativeTarget "PTD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BD6799235A3E1A0016F836 /* Debug */,
+				E0BD679A235A3E1A0016F836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0BD679F235A3E840016F836 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E0BD678C235A3E190016F836 /* PTD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0BD678D235A3E190016F836 /* PTD.xcdatamodel */,
+			);
+			currentVersion = E0BD678D235A3E190016F836 /* PTD.xcdatamodel */;
+			path = PTD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E0BD677D235A3E180016F836 /* Project object */;
+}

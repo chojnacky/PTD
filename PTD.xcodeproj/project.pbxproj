@@ -17,6 +17,7 @@
 		E0BD67A2235A41350016F836 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A1235A41350016F836 /* MainViewController.swift */; };
 		E0BD67A4235A44340016F836 /* LineChartViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A3235A44340016F836 /* LineChartViewController2.swift */; };
 		E0BD67A6235A445F0016F836 /* OpenFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A5235A445F0016F836 /* OpenFunctions.swift */; };
+		E0BD67A9235A4F0F0016F836 /* LineChartViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E0BD67A1235A41350016F836 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E0BD67A3235A44340016F836 /* LineChartViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController2.swift; sourceTree = "<group>"; };
 		E0BD67A5235A445F0016F836 /* OpenFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFunctions.swift; sourceTree = "<group>"; };
+		E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				E0BD67A5235A445F0016F836 /* OpenFunctions.swift */,
 				E0BD678A235A3E190016F836 /* LineChartViewController.swift */,
 				E0BD67A3235A44340016F836 /* LineChartViewController2.swift */,
+				E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */,
 				E0BD67A1235A41350016F836 /* MainViewController.swift */,
 				E0BD678F235A3E1A0016F836 /* Assets.xcassets */,
 				E0BD6791235A3E1A0016F836 /* Main.storyboard */,
@@ -165,6 +168,7 @@
 				E0BD678B235A3E190016F836 /* LineChartViewController.swift in Sources */,
 				E0BD67A2235A41350016F836 /* MainViewController.swift in Sources */,
 				E0BD678E235A3E190016F836 /* PTD.xcdatamodeld in Sources */,
+				E0BD67A9235A4F0F0016F836 /* LineChartViewController3.swift in Sources */,
 				E0BD67A6235A445F0016F836 /* OpenFunctions.swift in Sources */,
 				E0BD67A4235A44340016F836 /* LineChartViewController2.swift in Sources */,
 				E0BD6789235A3E190016F836 /* AppDelegate.swift in Sources */,

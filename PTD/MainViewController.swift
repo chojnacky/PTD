@@ -19,6 +19,9 @@ class MainViewController : NSViewController {
   @IBAction func PTD2A(_ sender: NSButton) {
     performSegue(withIdentifier: "PTD2A", sender: self)
   }
+  @IBAction func PTD2B(_ sender: NSButton) {
+    performSegue(withIdentifier: "PTD2B", sender: self)
+  }
   override func viewDidLoad() {
     super.viewDidLoad()
     ownership.stringValue = "Created by Karol Chojnacki"

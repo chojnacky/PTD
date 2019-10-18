@@ -15,7 +15,7 @@ class Functions {
   let fs: Double = 1000
   let d: Double = Double((3*Double.pi)/1)
   let T: Double = 1.2
-  let e: Double = Darwin.M_E
+  let e: Double = Double(Darwin.M_E)
   var m: Double = 0
   var interval: Double = 1/1000
   

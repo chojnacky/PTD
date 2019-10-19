@@ -28,13 +28,14 @@ class Functions {
       ys.append(self.x(t: i))
     }
     self.m = ys.max()!
-    print("OpenFunctions initialized with settings: \nf = \(f) Hz\nd = \(d)\nfs = \(fs) Hz\nT = \(T) s")
+    print("OpenFunctions initialized with settings: \nf = \(f)Hz\nd = \(d)\nfs = \(fs)Hz\nT = \(T)s\ninterval = \(interval)")
   }
   
   init(T: Double, fs: Double){
     self.fs = fs
     self.T = T
-    print("OpenFunctions initialized with settings: \nf = \(f) Hz\nd = \(d)\nfs = \(fs) Hz\nT = \(T) s")
+    self.interval = 1/fs
+    print("OpenFunctions initialized with settings: \nf = \(f)Hz\nd = \(d)\nfs = \(fs)Hz\nT = \(T)s\ninterval = \(interval)")
   }
   
   func x(t: Double) -> Double {
@@ -66,5 +67,26 @@ class Functions {
     let first: Double = 3*(cos(13*t)) - y(t: t) + (z(t: t)/7)
     let second: Double = sin(z(t: t) + x(t: t))
     return first * second
+  }
+  
+  func u(t: Double) -> Double {
+    if (t >= 0 && t < 0.6) {
+      let st: Double = pow(t, 2)
+      let nd: Double = sin(2 * Double.pi * t)
+      return st * nd
+    } else if (t >= 0.6 && t < 1.5) {
+      let st: Double = t * pow(e, t-0.6)
+      let nd: Double = sin(10 * Double.pi * t)
+      return st * 0.8 * nd
+    } else if (t >= 1.5 && t < 2.4) {
+      let st: Double = (1 + 0.4 * sin(2 * Double.pi * t))
+      let nd: Double = sin(30 * Double.pi * t)
+      return st * nd
+    } else if (t >= 2.4 && t < 3) {
+      let st: Double = sqrt(t + cos(14 * t))
+      let nd: Double = sin(10 * Double.pi * t)
+      return st * nd
+    }
+    return 0
   }
 }

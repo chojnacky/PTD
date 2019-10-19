@@ -19,6 +19,7 @@
 		E0BD67A6235A445F0016F836 /* OpenFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A5235A445F0016F836 /* OpenFunctions.swift */; };
 		E0BD67A9235A4F0F0016F836 /* LineChartViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */; };
 		E0BD67AB235A557B0016F836 /* LineChartViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67AA235A557B0016F836 /* LineChartViewController4.swift */; };
+		E0EBE0C0235A91920012E8F3 /* LineChartViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EBE0BF235A91920012E8F3 /* LineChartViewController5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E0BD67A5235A445F0016F836 /* OpenFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFunctions.swift; sourceTree = "<group>"; };
 		E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController3.swift; sourceTree = "<group>"; };
 		E0BD67AA235A557B0016F836 /* LineChartViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController4.swift; sourceTree = "<group>"; };
+		E0EBE0BF235A91920012E8F3 /* LineChartViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				E0BD67A3235A44340016F836 /* LineChartViewController2.swift */,
 				E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */,
 				E0BD67AA235A557B0016F836 /* LineChartViewController4.swift */,
+				E0EBE0BF235A91920012E8F3 /* LineChartViewController5.swift */,
 				E0BD67A1235A41350016F836 /* MainViewController.swift */,
 				E0BD678F235A3E1A0016F836 /* Assets.xcassets */,
 				E0BD6791235A3E1A0016F836 /* Main.storyboard */,
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0EBE0C0235A91920012E8F3 /* LineChartViewController5.swift in Sources */,
 				E0BD678B235A3E190016F836 /* LineChartViewController.swift in Sources */,
 				E0BD67A2235A41350016F836 /* MainViewController.swift in Sources */,
 				E0BD678E235A3E190016F836 /* PTD.xcdatamodeld in Sources */,

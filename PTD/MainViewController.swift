@@ -8,29 +8,57 @@
 
 import Foundation
 import Cocoa
+import Charts
 
-class MainViewController : NSViewController {
+class MainViewController : NSViewController, FunctionsDelegate {
   
-  @IBOutlet weak var ownership: NSTextField!
+  let fc = Functions()
+  @IBOutlet weak var menuListOutlet: NSPopUpButton!
   
-  @IBAction func PTD1(_ sender: NSButton) {
-    performSegue(withIdentifier: "PTD1", sender: self)
+  @IBAction func menuList(_ sender: NSPopUpButton) {
+    fc.delegate = self
+    
+    let selectedIndex = menuListOutlet.indexOfSelectedItem
+    
+    if (selectedIndex == 0){
+      self.lineChartView.isHidden = true
+    }
+    else if (selectedIndex == 1) {
+      fc.makeAChart(.ZAD1)
+    } else if (selectedIndex == 2) {
+      fc.makeAChart(.ZAD2A)
+    }
+    else if (selectedIndex == 3) {
+      fc.makeAChart(.ZAD2B)
+    }
+    else if (selectedIndex == 4) {
+      fc.makeAChart(.ZAD2C)
+    }
+    else if (selectedIndex == 5) {
+      fc.makeAChart(.ZAD3)
+    }
+    else if (selectedIndex == 6) {
+      fc.makeAChart(.ZAD4A)
+    }
+    else if (selectedIndex == 7) {
+      fc.makeAChart(.ZAD4B)
+    }
+    else if (selectedIndex == 8) {
+      fc.makeAChart(.ZAD4C)
+    } else {
+      print("Error.")
+    }
   }
-  @IBAction func PTD2A(_ sender: NSButton) {
-    performSegue(withIdentifier: "PTD2A", sender: self)
+  
+  @IBOutlet weak var lineChartView: LineChartView!
+  func chartDataReady(_ data: LineChartData) {
+    self.lineChartView.isHidden = false
+    self.lineChartView.data = data
   }
-  @IBAction func PTD2B(_ sender: NSButton) {
-    performSegue(withIdentifier: "PTD2B", sender: self)
-  }
-  @IBAction func PTD2C(_ sender: NSButton) {
-    performSegue(withIdentifier: "PTD2C", sender: self)
-  }
-  @IBAction func PTD3(_ sender: NSButton) {
-    performSegue(withIdentifier: "PTD3", sender: self)
-  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    ownership.stringValue = "Created by Karol Chojnacki"
+    self.lineChartView.backgroundColor = NSUIColor.white
+    self.lineChartView.gridBackgroundColor = NSUIColor.white
   }
-  
 }

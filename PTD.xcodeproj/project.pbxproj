@@ -8,24 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E0BD6789235A3E190016F836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD6788235A3E190016F836 /* AppDelegate.swift */; };
-		E0BD678B235A3E190016F836 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD678A235A3E190016F836 /* LineChartViewController.swift */; };
 		E0BD678E235A3E190016F836 /* PTD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0BD678C235A3E190016F836 /* PTD.xcdatamodeld */; };
 		E0BD6790235A3E1A0016F836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BD678F235A3E1A0016F836 /* Assets.xcassets */; };
 		E0BD6793235A3E1A0016F836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BD6791235A3E1A0016F836 /* Main.storyboard */; };
 		E0BD679C235A3E590016F836 /* Charts-3.4.0 in Resources */ = {isa = PBXBuildFile; fileRef = E0BD679B235A3E590016F836 /* Charts-3.4.0 */; };
 		E0BD67A0235A3E840016F836 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E0BD679F235A3E840016F836 /* Charts */; };
 		E0BD67A2235A41350016F836 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A1235A41350016F836 /* MainViewController.swift */; };
-		E0BD67A4235A44340016F836 /* LineChartViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A3235A44340016F836 /* LineChartViewController2.swift */; };
-		E0BD67A6235A445F0016F836 /* OpenFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A5235A445F0016F836 /* OpenFunctions.swift */; };
-		E0BD67A9235A4F0F0016F836 /* LineChartViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */; };
-		E0BD67AB235A557B0016F836 /* LineChartViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67AA235A557B0016F836 /* LineChartViewController4.swift */; };
-		E0EBE0C0235A91920012E8F3 /* LineChartViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EBE0BF235A91920012E8F3 /* LineChartViewController5.swift */; };
+		E0BD67A6235A445F0016F836 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BD67A5235A445F0016F836 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0BD6785235A3E180016F836 /* PTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BD6788235A3E190016F836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0BD678A235A3E190016F836 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		E0BD678D235A3E190016F836 /* PTD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTD.xcdatamodel; sourceTree = "<group>"; };
 		E0BD678F235A3E1A0016F836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0BD6792235A3E1A0016F836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,11 +27,7 @@
 		E0BD6795235A3E1A0016F836 /* PTD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PTD.entitlements; sourceTree = "<group>"; };
 		E0BD679B235A3E590016F836 /* Charts-3.4.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Charts-3.4.0"; sourceTree = "<group>"; };
 		E0BD67A1235A41350016F836 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		E0BD67A3235A44340016F836 /* LineChartViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController2.swift; sourceTree = "<group>"; };
-		E0BD67A5235A445F0016F836 /* OpenFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFunctions.swift; sourceTree = "<group>"; };
-		E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController3.swift; sourceTree = "<group>"; };
-		E0BD67AA235A557B0016F836 /* LineChartViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController4.swift; sourceTree = "<group>"; };
-		E0EBE0BF235A91920012E8F3 /* LineChartViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController5.swift; sourceTree = "<group>"; };
+		E0BD67A5235A445F0016F836 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				E0BD6788235A3E190016F836 /* AppDelegate.swift */,
-				E0BD67A5235A445F0016F836 /* OpenFunctions.swift */,
-				E0BD678A235A3E190016F836 /* LineChartViewController.swift */,
-				E0BD67A3235A44340016F836 /* LineChartViewController2.swift */,
-				E0BD67A8235A4F0F0016F836 /* LineChartViewController3.swift */,
-				E0BD67AA235A557B0016F836 /* LineChartViewController4.swift */,
-				E0EBE0BF235A91920012E8F3 /* LineChartViewController5.swift */,
+				E0BD67A5235A445F0016F836 /* Functions.swift */,
 				E0BD67A1235A41350016F836 /* MainViewController.swift */,
 				E0BD678F235A3E1A0016F836 /* Assets.xcassets */,
 				E0BD6791235A3E1A0016F836 /* Main.storyboard */,
@@ -171,14 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0EBE0C0235A91920012E8F3 /* LineChartViewController5.swift in Sources */,
-				E0BD678B235A3E190016F836 /* LineChartViewController.swift in Sources */,
 				E0BD67A2235A41350016F836 /* MainViewController.swift in Sources */,
 				E0BD678E235A3E190016F836 /* PTD.xcdatamodeld in Sources */,
-				E0BD67A9235A4F0F0016F836 /* LineChartViewController3.swift in Sources */,
-				E0BD67A6235A445F0016F836 /* OpenFunctions.swift in Sources */,
-				E0BD67A4235A44340016F836 /* LineChartViewController2.swift in Sources */,
-				E0BD67AB235A557B0016F836 /* LineChartViewController4.swift in Sources */,
+				E0BD67A6235A445F0016F836 /* Functions.swift in Sources */,
 				E0BD6789235A3E190016F836 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

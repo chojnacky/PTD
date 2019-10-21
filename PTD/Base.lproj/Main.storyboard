@@ -5,33 +5,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PTD #3-->
-        <scene sceneID="EBA-QW-Muy">
-            <objects>
-                <viewController title="PTD #3" showSeguePresentationStyle="single" id="bp7-ji-DgU" customClass="LineChartViewController5" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m3p-xR-ykD">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="1Rf-mf-600" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                            </customView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="1Rf-mf-600" secondAttribute="bottom" id="RsR-O8-hnG"/>
-                            <constraint firstItem="1Rf-mf-600" firstAttribute="top" secondItem="m3p-xR-ykD" secondAttribute="top" id="WJS-li-BNA"/>
-                            <constraint firstAttribute="trailing" secondItem="1Rf-mf-600" secondAttribute="trailing" id="iOJ-od-bev"/>
-                            <constraint firstItem="1Rf-mf-600" firstAttribute="leading" secondItem="m3p-xR-ykD" secondAttribute="leading" id="yc4-ly-Hyg"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="lineChartView" destination="1Rf-mf-600" id="Omz-mq-uuw"/>
-                    </connections>
-                </viewController>
-                <customObject id="lAf-qZ-qVc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="400" y="-208"/>
-        </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
@@ -707,235 +680,59 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
-            <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Podstawy Transmisji Danych" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="154" height="68"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="QNv-QW-l6e" kind="relationship" relationship="window.shadowedContentViewController" id="J13-LV-QHd"/>
-                    </connections>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-88" y="149"/>
-        </scene>
         <!--Podstawy Transmisji Danych-->
         <scene sceneID="0hD-1G-l43">
             <objects>
                 <viewController title="Podstawy Transmisji Danych" showSeguePresentationStyle="single" id="QNv-QW-l6e" customClass="MainViewController" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="EF5-Fp-vCs">
-                        <rect key="frame" x="0.0" y="0.0" width="194" height="204"/>
+                        <rect key="frame" x="0.0" y="0.0" width="537" height="303"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eaD-6l-vep">
-                                <rect key="frame" x="44" y="161" width="106" height="32"/>
-                                <buttonCell key="cell" type="push" title="PTD #1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2bC-AH-K1I">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="15"/>
-                                </buttonCell>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6M-d1-4Ie" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="537" height="283"/>
+                            </customView>
+                            <popUpButton misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-QN-bH0">
+                                <rect key="frame" x="198" y="280" width="110" height="25"/>
+                                <popUpButtonCell key="cell" type="check" title="WYBIERZ ZAD." bezelStyle="regularSquare" imagePosition="left" lineBreakMode="truncatingTail" state="on" borderStyle="bezel" inset="2" selectedItem="pl2-Kj-iDb" id="oUA-3X-oZO">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="tOp-n7-9YI">
+                                        <items>
+                                            <menuItem title="WYBIERZ ZAD." state="on" id="pl2-Kj-iDb"/>
+                                            <menuItem title="Zadanie 1" id="FPI-PO-Ggw"/>
+                                            <menuItem title="Zadanie 2 A" id="JNF-Pq-dyz"/>
+                                            <menuItem title="Zadanie 2 B" id="ZaL-7N-kJB"/>
+                                            <menuItem title="Zadanie 2 C" id="yM7-kh-gGf"/>
+                                            <menuItem title="Zadanie 3" id="bAJ-QN-VWo"/>
+                                            <menuItem title="Zadanie 4 A" id="eZR-vR-yVb"/>
+                                            <menuItem title="Zadanie 4 B" id="GeH-fY-9yp"/>
+                                            <menuItem title="Zadanie 4 C" id="JTq-UL-SW8"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
                                 <connections>
-                                    <action selector="PTD1:" target="QNv-QW-l6e" id="MAW-dd-jD8"/>
+                                    <action selector="menuList:" target="QNv-QW-l6e" id="4Ti-99-mfo"/>
                                 </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-oW-9sZ">
-                                <rect key="frame" x="44" y="130" width="106" height="32"/>
-                                <buttonCell key="cell" type="push" title="PTD #2 A" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rPF-eo-Fjj">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="15"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="PTD2A:" target="QNv-QW-l6e" id="RTS-96-547"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NV6-om-Dha">
-                                <rect key="frame" x="44" y="99" width="106" height="32"/>
-                                <buttonCell key="cell" type="push" title="PTD #2 B" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C6i-ig-p4E">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="15"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="PTD2B:" target="QNv-QW-l6e" id="9XB-Fr-90d"/>
-                                </connections>
-                            </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dLN-wD-a6B">
-                                <rect key="frame" x="8" y="10" width="178" height="15"/>
-                                <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="center" title="Label" id="hwv-lh-Wif">
-                                    <font key="font" metaFont="systemLight" size="12"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-dS-03Z">
-                                <rect key="frame" x="44" y="68" width="106" height="32"/>
-                                <buttonCell key="cell" type="push" title="PTD #2 C" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jcd-SR-ewd">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="15"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="PTD2C:" target="QNv-QW-l6e" id="Ybh-sN-jto"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0SU-Gf-Jsb">
-                                <rect key="frame" x="44" y="37" width="106" height="32"/>
-                                <buttonCell key="cell" type="push" title="PTD #3" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dZN-Bb-wb1">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="15"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="PTD3:" target="QNv-QW-l6e" id="DdY-A2-B03"/>
-                                </connections>
-                            </button>
+                            </popUpButton>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="o4s-oW-9sZ" secondAttribute="trailing" constant="50" id="1fJ-hk-hw9"/>
-                            <constraint firstItem="0SU-Gf-Jsb" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="50" id="7bt-FJ-XUS"/>
-                            <constraint firstItem="dLN-wD-a6B" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="10" id="9aJ-Pr-GJ6"/>
-                            <constraint firstItem="o4s-oW-9sZ" firstAttribute="top" secondItem="eaD-6l-vep" secondAttribute="bottom" constant="10" id="MHj-co-Mto"/>
-                            <constraint firstItem="yZ7-dS-03Z" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="50" id="NtU-64-XPF"/>
-                            <constraint firstItem="yZ7-dS-03Z" firstAttribute="top" secondItem="NV6-om-Dha" secondAttribute="bottom" constant="10" id="SJW-A8-TKk"/>
-                            <constraint firstItem="NV6-om-Dha" firstAttribute="top" secondItem="o4s-oW-9sZ" secondAttribute="bottom" constant="10" id="Uqx-Wq-caH"/>
-                            <constraint firstItem="NV6-om-Dha" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="50" id="WOq-De-1xY"/>
-                            <constraint firstItem="eaD-6l-vep" firstAttribute="top" secondItem="EF5-Fp-vCs" secondAttribute="top" constant="15" id="Wed-WA-q9G"/>
-                            <constraint firstItem="0SU-Gf-Jsb" firstAttribute="top" secondItem="yZ7-dS-03Z" secondAttribute="bottom" constant="10" id="WtH-1g-VgG"/>
-                            <constraint firstAttribute="trailing" secondItem="yZ7-dS-03Z" secondAttribute="trailing" constant="50" id="XgM-3e-YrS"/>
-                            <constraint firstAttribute="trailing" secondItem="eaD-6l-vep" secondAttribute="trailing" constant="50" id="d6m-gj-C10"/>
-                            <constraint firstItem="o4s-oW-9sZ" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="50" id="ezm-74-8w7"/>
-                            <constraint firstAttribute="trailing" secondItem="dLN-wD-a6B" secondAttribute="trailing" constant="10" id="h6Y-SB-aHZ"/>
-                            <constraint firstAttribute="bottom" secondItem="dLN-wD-a6B" secondAttribute="bottom" constant="10" id="l1B-52-0EB"/>
-                            <constraint firstAttribute="trailing" secondItem="0SU-Gf-Jsb" secondAttribute="trailing" constant="50" id="sPO-XI-70B"/>
-                            <constraint firstAttribute="trailing" secondItem="NV6-om-Dha" secondAttribute="trailing" constant="50" id="vD2-ua-mpD"/>
-                            <constraint firstItem="eaD-6l-vep" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="50" id="w9t-He-YDS"/>
+                            <constraint firstAttribute="trailing" secondItem="I6M-d1-4Ie" secondAttribute="trailing" id="5qT-Qy-Hdc"/>
+                            <constraint firstItem="I6M-d1-4Ie" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" id="BAR-3j-ojg"/>
+                            <constraint firstAttribute="bottom" secondItem="I6M-d1-4Ie" secondAttribute="bottom" id="JgZ-JP-Esf"/>
+                            <constraint firstItem="uMB-QN-bH0" firstAttribute="leading" secondItem="EF5-Fp-vCs" secondAttribute="leading" constant="200" id="LGa-qq-grR"/>
+                            <constraint firstAttribute="trailing" secondItem="uMB-QN-bH0" secondAttribute="trailing" constant="200" id="RVn-fC-Leb"/>
+                            <constraint firstItem="I6M-d1-4Ie" firstAttribute="top" secondItem="EF5-Fp-vCs" secondAttribute="top" constant="20" id="Z7a-9C-oRL"/>
+                            <constraint firstItem="uMB-QN-bH0" firstAttribute="top" secondItem="EF5-Fp-vCs" secondAttribute="top" id="sja-D0-Dmh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ownership" destination="dLN-wD-a6B" id="a5A-jl-sP0"/>
-                        <segue destination="XfG-lQ-9wD" kind="show" identifier="PTD1" id="P6h-7q-fT2"/>
-                        <segue destination="Agq-j3-HuC" kind="show" identifier="PTD2A" id="yOs-An-XxM"/>
-                        <segue destination="tRn-Y4-gCd" kind="show" identifier="PTD2B" id="ATW-Tv-r9U"/>
-                        <segue destination="MpQ-Wr-a3K" kind="show" identifier="PTD2C" id="ihh-fu-EXl"/>
-                        <segue destination="bp7-ji-DgU" kind="show" identifier="PTD3" id="XaH-bS-BDH"/>
+                        <outlet property="lineChartView" destination="I6M-d1-4Ie" id="QW8-bj-bTT"/>
+                        <outlet property="menuListOutlet" destination="uMB-QN-bH0" id="NwT-JT-Txs"/>
                     </connections>
                 </viewController>
                 <customObject id="UYz-JF-AET" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="163"/>
-        </scene>
-        <!--PTD #2 C-->
-        <scene sceneID="0g4-3o-p0z">
-            <objects>
-                <viewController title="PTD #2 C" showSeguePresentationStyle="single" id="MpQ-Wr-a3K" customClass="LineChartViewController4" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="9IK-us-ZRQ">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ttD-wS-YEJ" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                            </customView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ttD-wS-YEJ" secondAttribute="trailing" id="LSQ-nT-tcQ"/>
-                            <constraint firstAttribute="bottom" secondItem="ttD-wS-YEJ" secondAttribute="bottom" id="Ljt-De-JQY"/>
-                            <constraint firstItem="ttD-wS-YEJ" firstAttribute="leading" secondItem="9IK-us-ZRQ" secondAttribute="leading" id="jIn-z8-hfX"/>
-                            <constraint firstItem="ttD-wS-YEJ" firstAttribute="top" secondItem="9IK-us-ZRQ" secondAttribute="top" id="l7H-mv-TKu"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="lineChartView" destination="ttD-wS-YEJ" id="XnE-od-Ivi"/>
-                    </connections>
-                </viewController>
-                <customObject id="avL-Ek-cIn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="869" y="-112"/>
-        </scene>
-        <!--PTD #2 B-->
-        <scene sceneID="uip-qG-68h">
-            <objects>
-                <viewController title="PTD #2 B" showSeguePresentationStyle="single" id="tRn-Y4-gCd" customClass="LineChartViewController3" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="Jk4-4Y-0FG">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="xvo-oS-kvb" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                            </customView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="xvo-oS-kvb" firstAttribute="top" secondItem="Jk4-4Y-0FG" secondAttribute="top" id="2aD-JG-6rJ"/>
-                            <constraint firstAttribute="bottom" secondItem="xvo-oS-kvb" secondAttribute="bottom" id="4LL-dR-LKT"/>
-                            <constraint firstAttribute="trailing" secondItem="xvo-oS-kvb" secondAttribute="trailing" id="l50-cu-AcH"/>
-                            <constraint firstItem="xvo-oS-kvb" firstAttribute="leading" secondItem="Jk4-4Y-0FG" secondAttribute="leading" id="wd9-nF-b3J"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="lineChartView" destination="xvo-oS-kvb" id="6Ap-K1-Gsi"/>
-                    </connections>
-                </viewController>
-                <customObject id="xMr-7a-tq3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="889" y="250"/>
-        </scene>
-        <!--PTD #2 A-->
-        <scene sceneID="ElB-gB-Aud">
-            <objects>
-                <viewController title="PTD #2 A" showSeguePresentationStyle="single" id="Agq-j3-HuC" customClass="LineChartViewController2" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="rob-rc-lTg">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="271"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="U4H-Zm-isc" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="271"/>
-                            </customView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="U4H-Zm-isc" firstAttribute="top" secondItem="rob-rc-lTg" secondAttribute="top" id="ogi-Fp-Y3V"/>
-                            <constraint firstItem="U4H-Zm-isc" firstAttribute="leading" secondItem="rob-rc-lTg" secondAttribute="leading" id="scU-Xf-VV9"/>
-                            <constraint firstAttribute="bottom" secondItem="U4H-Zm-isc" secondAttribute="bottom" id="zaL-oo-Dmr"/>
-                            <constraint firstAttribute="trailing" secondItem="U4H-Zm-isc" secondAttribute="trailing" id="zni-Mw-dKv"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="lineChartView" destination="U4H-Zm-isc" id="Jmb-Dm-e8h"/>
-                    </connections>
-                </viewController>
-                <customObject id="Byx-lY-sLq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="844" y="667"/>
-        </scene>
-        <!--PTD #1-->
-        <scene sceneID="hIz-AP-VOD">
-            <objects>
-                <viewController title="PTD #1" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="LineChartViewController" customModule="PTD" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="qGJ-Gy-cFW" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                            </customView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="qGJ-Gy-cFW" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="8jf-Cl-zs5"/>
-                            <constraint firstItem="qGJ-Gy-cFW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="DhX-fF-GnT"/>
-                            <constraint firstAttribute="bottom" secondItem="qGJ-Gy-cFW" secondAttribute="bottom" id="EhP-RY-uXq"/>
-                            <constraint firstAttribute="trailing" secondItem="qGJ-Gy-cFW" secondAttribute="trailing" id="aYQ-U8-WAe"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="lineChartView" destination="qGJ-Gy-cFW" id="A7r-Md-EzV"/>
-                    </connections>
-                </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="359" y="666"/>
+            <point key="canvasLocation" x="269.5" y="219.5"/>
         </scene>
     </scenes>
 </document>
